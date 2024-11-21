@@ -1,0 +1,20 @@
+.content {
+  margin-left: 300px; /* Igual al ancho de la navbar */
+  padding: 20px; /* Espaciado interno */
+  margin-top: 5vh;
+  width: 100%;
+}
+
+.title {
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+  }
+}
+@media (min-width: 600px) {
+  .content {
+    margin-top: 3vh;
+  }
+}

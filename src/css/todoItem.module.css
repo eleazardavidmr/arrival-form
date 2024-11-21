@@ -1,0 +1,59 @@
+/* Contenedor principal de la card */
+.item {
+  gap: 0;
+  padding: 0;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  margin: 10px auto;
+  color: #333;
+  position: relative;
+  margin-bottom: 40px; /* Espacio para el botón */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #ddd;
+  list-style-type: none;
+  width: 80vw;
+}
+.item_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(8, auto);
+}
+/* Estilo de las etiquetas (columna izquierda) */
+.label {
+  padding: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Estilo del contenido (columna derecha) */
+.content {
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: right;
+}
+
+/* Estilo del botón de eliminar */
+.delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: #e74c3c;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+@media (min-width: 600px) {
+  .item {
+    width: 300px;
+  }
+}

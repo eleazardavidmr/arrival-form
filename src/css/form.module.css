@@ -1,0 +1,128 @@
+.main {
+  margin-left: 280px;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px; /* Aumenta el espacio entre los elementos */
+  background-color: #2e2e2e; /* Fondo oscuro para el formulario */
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: auto;
+  width: 70vw;
+}
+form input {
+  border: none;
+  outline: none;
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 30px; /* Redondea los bordes */
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto claro */
+  font-size: 16px; /* Tamaño de fuente más grande */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+form input:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+form input:focus {
+  outline: 1px solid #218838;
+}
+
+.add_btn {
+  /*
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: #4caf50; /* Color verde para el botón 
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+*/
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+}
+
+.add_btn:hover {
+  /*
+  background-color: #45a049; /* Efecto hover en el botón 
+  transform: scale(1.05); /* Ligera expansión al hacer hover 
+*/
+  background-color: #218838;
+  scale: 1.05;
+}
+
+.modal {
+  position: fixed;
+  width: 90%;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  background-color: #333;
+  border-radius: 20px;
+}
+.modal_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.close_modal {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.see_btn {
+  display: inline-block;
+  padding: 5px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff; /* Color de fondo */
+  border: none;
+  border-radius: 8px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado */
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.see_btn:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  form {
+    width: 50vw;
+  }
+
+  .modal {
+    top: 10px;
+    bottom: auto;
+    width: 25vw;
+  }
+}
